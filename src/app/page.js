@@ -22,9 +22,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center text-blue-500">Join Chat Room</h1>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-50 to-indigo-50 p-4">
+      <div className="bg-white p-6 md:p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 className="text-xl md:text-2xl font-bold mb-6 text-center text-blue-500">Join Chat Room</h1>
         
         <div className="space-y-4">
           <div>
@@ -37,7 +37,7 @@ export default function Home() {
               placeholder="Enter your username" 
               value={username}
               onChange={e => setUsername(e.target.value)} 
-              className="w-full px-4 py-2 border rounded-md text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-500"
             />
           </div>
           
