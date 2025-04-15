@@ -155,7 +155,7 @@ export default function ChatRoom() {
               }`}
             >
               <div className="flex justify-between items-baseline mb-1">
-                <span className={`font-bold text-sm ${
+                <span className={`font-bold text-xl ${
                   m.username === username ? 'text-blue-600' : 'text-gray-700'
                 }`}>
                   {m.username}
@@ -179,7 +179,7 @@ export default function ChatRoom() {
             value={input} 
             onChange={e => setInput(e.target.value)} 
             onKeyDown={e => e.key === 'Enter' && sendMessage()} 
-            className="flex-1 border rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 border rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-500"
             placeholder={isMobile ? "Type message..." : "Type your message here..."}
           />
           <button 
