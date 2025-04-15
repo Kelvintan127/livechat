@@ -6,7 +6,8 @@
     "dev": "node src/app/server.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next"
   },
   "dependencies": {
     "@prisma/client": "^6.6.0",
